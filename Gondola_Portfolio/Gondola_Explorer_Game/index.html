@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word Scramble • Unjumble Fun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Word Scramble</h1>
+
+    <div class="game-info">
+      <div>Score: <span id="score">0</span></div>
+      <div>Time: <span id="timer">60</span>s</div>
+    </div>
+
+    <div class="scrambled-word" id="scrambled"></div>
+    
+    <div class="hint">Hint: <span id="hintText"></span></div>
+
+    <input type="text" id="answerInput" placeholder="Type your answer..." autocomplete="off" autofocus>
+    
+    <div class="buttons">
+      <button id="submitBtn">Submit</button>
+      <button id="hintBtn">Show Hint</button>
+      <button id="skipBtn">Skip Word</button>
+      <a href="../index.html" class="btn back-home">Back Home</a>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <div class="game-over hidden" id="gameOver">
+      <h2>Game Over!</h2>
+      <p>Your score: <strong id="finalScore">0</strong></p>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
